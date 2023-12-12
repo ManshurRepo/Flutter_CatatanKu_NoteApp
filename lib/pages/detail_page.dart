@@ -71,12 +71,16 @@ class _DetailPageState extends State<DetailPage> {
         children: [
           Text(
             widget.note.title,
-            style: Theme.of(context).textTheme.titleLarge,
+            style: Theme.of(context)
+                .textTheme
+                .titleLarge!
+                .copyWith(fontSize: 30, fontWeight: FontWeight.w700),
           ),
-          Text(
-            widget.note.content,
-            style: Theme.of(context).textTheme.titleLarge,
-          ),
+          Text(widget.note.content,
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge!
+                  .copyWith(fontSize: 18)),
         ],
       ),
       floatingActionButton: FloatingActionButton(

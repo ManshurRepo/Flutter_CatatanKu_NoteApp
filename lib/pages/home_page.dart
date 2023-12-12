@@ -111,8 +111,11 @@ class _HomePageState extends State<HomePage> {
                                           .textTheme
                                           .titleLarge!
                                           .copyWith(
-                                            color: Colors.black,
-                                          ),
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.normal,
+                                              fontSize: 15),
+                                      maxLines: 8,
+                                      overflow: TextOverflow.ellipsis,
                                     ),
                                   ],
                                 ),
